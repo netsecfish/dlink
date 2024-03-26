@@ -4,7 +4,7 @@
 
 The described vulnerability affects multiple D-Link NAS devices, including models DNS-340L, DNS-320L, DNS-327L, and DNS-325, among others. The vulnerability lies within the **`nas_sharing.cgi`** uri, which is vulnerable due to two main issues: a backdoor facilitated by hardcoded credentials, and a command injection vulnerability via the **`system`** parameter. This exploitation could lead to arbitrary command execution on the affected D-Link NAS devices, granting attackers potential access to sensitive information, system configuration alteration, or denial of service, by specifying a command,Affecting over 92,000 devices on the Internet.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/3f67e7ef-2ba8-446a-9721-f87d0baa1695/3eecbe30-4ae7-4671-869e-c30e18327c98/Untitled.png)
+![Untitled](fofa-result.png)
 
 ## Corresponding CWE
 
@@ -34,7 +34,7 @@ GET /cgi-bin/nas_sharing.cgi?user=messagebus&passwd=&cmd=15&system=<BASE64_ENCOD
 
 ## **Actual Result**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/3f67e7ef-2ba8-446a-9721-f87d0baa1695/cd68ff74-d806-4241-982c-8ae75d3962d4/Untitled.jpeg)
+![Untitled](dns-320.jpg)
 
 ## Impact:
 
